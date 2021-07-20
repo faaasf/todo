@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root  'tasks#index'
+
   get  'tasks' => 'tasks#index'
   post 'tasks' =>  'tasks#store'
   get  'tasks/:id' => 'tasks#show'
